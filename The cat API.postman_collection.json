@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "336146dd-624c-469e-88ee-5a0e5d77a677",
+		"name": "The cat API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33374106"
+	},
+	"item": [
+		{
+			"name": "/images/search",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "live_NFqv1Vc8sxlpU22qKXCaoXrsTiJ0nmZCiWXVfhMUAg1sDJ3zxCYxL2qJ8gkhsShe",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/images/search?&mime_types=gif&order=RANDOM&limit=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						"search"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "mime_types",
+							"value": "gif"
+						},
+						{
+							"key": "order",
+							"value": "RANDOM"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "random GIF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.thecatapi.com/v1/images/search?&mime_types=gif&order=RANDOM&limit=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"thecatapi",
+								"com"
+							],
+							"path": [
+								"v1",
+								"images",
+								"search"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "mime_types",
+									"value": "gif"
+								},
+								{
+									"key": "order",
+									"value": "RANDOM"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-dns-prefetch-control",
+							"value": "off"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "retry-after-seconds",
+							"value": "60"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "120"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "119"
+						},
+						{
+							"key": "ratelimit-consumed",
+							"value": "1"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "2024-10-29T20:21:22.301Z"
+						},
+						{
+							"key": "expires",
+							"value": "Tue, 03 Jul 2001 06:00:00 GMT"
+						},
+						{
+							"key": "last-modified",
+							"value": "Tue Oct 29 2024 20:20:22 GMT+0000 (Coordinated Universal Time)"
+						},
+						{
+							"key": "cache-control",
+							"value": "post-check=0, pre-check=0"
+						},
+						{
+							"key": "authenticated",
+							"value": "true"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "x-response-time",
+							"value": "582ms"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "1a775841d676c2b5976fc8a2ca0540ed"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 29 Oct 2024 20:20:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "501"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"breeds\": [],\n        \"id\": \"21d\",\n        \"url\": \"https://cdn2.thecatapi.com/images/21d.gif\",\n        \"width\": 500,\n        \"height\": 214\n    },\n    {\n        \"breeds\": [],\n        \"id\": \"33d\",\n        \"url\": \"https://cdn2.thecatapi.com/images/33d.gif\",\n        \"width\": 300,\n        \"height\": 225\n    },\n    {\n        \"breeds\": [],\n        \"id\": \"4hq\",\n        \"url\": \"https://cdn2.thecatapi.com/images/4hq.gif\",\n        \"width\": 500,\n        \"height\": 281\n    },\n    {\n        \"breeds\": [],\n        \"id\": \"7mc\",\n        \"url\": \"https://cdn2.thecatapi.com/images/7mc.gif\",\n        \"width\": 500,\n        \"height\": 281\n    },\n    {\n        \"breeds\": [],\n        \"id\": \"b18\",\n        \"url\": \"https://cdn2.thecatapi.com/images/b18.gif\",\n        \"width\": 500,\n        \"height\": 274\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "/images/:image_id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
